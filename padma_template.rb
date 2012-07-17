@@ -10,12 +10,18 @@ end
 
 gem_group :development, :test do
   gem 'rspec-rails'
+  gem 'shoulda'
   gem 'factory_girl_rails'
+  gem 'guard-rspec'
+  gem 'libnotify'
+  gem 'yard', '~> 0.7.4'
+  gem 'yard-rest', git: 'git@github.com:dwaynemac/yard-rest-plugin.git'
 end
 
 run "bundle install"
 
 generate('rspec:install')
+run "guard init"
 
 git :init
 git :add => "."
