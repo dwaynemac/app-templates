@@ -21,7 +21,7 @@ end
 run "bundle install"
 
 generate('rspec:install')
-run "guard init"
+run "bundle exec guard init"
 
 git :init
 git :add => "."
