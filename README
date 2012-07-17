@@ -1,0 +1,3 @@
+To create a new app run:
+
+    rails new [APP_NAME] -m https://raw.github.com/dwaynemac/app-templates/master/padma_template.rb
